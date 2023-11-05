@@ -1,7 +1,7 @@
-const TelcoHeader = () => {
+const Header = () => {
   return (
-    <div>TelcoHeader</div>
+    <div>Header</div>
   )
 }
 
-export default TelcoHeader
+export default Header
