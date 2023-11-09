@@ -1,25 +1,32 @@
 import { useState } from "react";
 
-const TechSupport = () => {
-  const [selectedTechSupport, setSelectedTechSupport] = useState("Yes");
+const PaymentMethod = () => {
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState("");
 
-  const handleTechSupportChange = (e) => {
-    setSelectedTechSupport(e.target.value);
+  const handlePaymentMethodChange = (e) => {
+    setSelectedPaymentMethod(e.target.value);
   };
 
   return (
     <div className="flex flex-row p-3">
-      <p className="bg-gray-400 p-3 rounded-l-md text-white">TechSupport :</p>
+      <p className="bg-gray-400 p-3 rounded-l-md text-white">
+        Payment Method :
+      </p>
       <select
-        value={selectedTechSupport}
-        onChange={handleTechSupportChange}
-        className="w-[21.7vh] rounded-r-md px-2"
+        value={selectedPaymentMethod}
+        onChange={handlePaymentMethodChange}
+        className="w-[20.3vh] rounded-r-md px-2"
       >
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
+        <option value="" disabled hidden>
+          Choose Your Payment
+        </option>
+        <option value="Pulsa">Pulsa</option>
+        <option value="Credit">Credit</option>
+        <option value="Debit">Debit</option>
+        <option value="Digital Wallet">Digital Wallet</option>
       </select>
     </div>
   );
 };
 
-export default TechSupport;
+export default PaymentMethod;

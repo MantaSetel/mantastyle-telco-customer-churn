@@ -1,32 +1,31 @@
-import Dependent from "../components/Dependents";
-import Gender from "../components/Gender";
-import MultipleLanes from "../components/MultipleLines";
-import Partner from "../components/Partner";
-import PhoneService from "../components/PhoneService";
-import InternetService from "../components/InternetService";
-import OnlineSecurity from "../components/OnlineSecurity";
-import OnlineBackup from "../components/OnlineBackup";
-import DeviceProtection from "../components/DeviceProtection";
-import TechSupport from "../components/TechSupport";
-import StreamingTV from "../components/StreamingTV";
-import StreamingMovie from "../components/StreamingMovie";
+import TenureMonths from "../components/TenureMonths";
+import Location from "../components/Location";
+import DeviceClass from "../components/DeviceClass";
+import GamesProduct from "../components/GamesProduct";
+import MusicProduct from "../components/MusicProduct";
+import EducationProduct from "../components/EducationProduct";
+import CallCenter from "../components/CallCenter";
+import VideoProduct from "../components/VideoProduct";
+import UseMayApp from "../components/UseMyApp";
+import PaymentMethod from "../components/PaymentMethod";
+import MonthlyPurchase from "../components/MonthlyPurchase";
+import PrimaryButton from "../components/PrimaryButton";
 
 const Prediction = () => {
   return (
-    <div className="bg-[#0969b5] h-[40vh] w-[185vh] rounded-xl">
+    <div className="bg-[#0969b5] h-[25vh] w-[185vh] rounded-xl">
       <div className="p-5 grid grid-cols-4">
-        <Gender />
-        <Partner />
-        <Dependent />
-        <PhoneService />
-        <MultipleLanes />
-        <InternetService />
-        <OnlineSecurity />
-        <OnlineBackup />
-        <DeviceProtection />
-        <TechSupport />
-        <StreamingTV />
-        <StreamingMovie />
+        <TenureMonths />
+        <Location />
+        <DeviceClass />
+        <GamesProduct />
+        <MusicProduct />
+        <EducationProduct />
+        <CallCenter />
+        <VideoProduct />
+        <UseMayApp />
+        <PaymentMethod />
+        <MonthlyPurchase />
       </div>
     </div>
   );
