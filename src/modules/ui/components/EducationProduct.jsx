@@ -1,28 +1,31 @@
 import { useState } from "react";
 
-const InternetService = () => {
-  const [selectedInternetService, setSelectedInternetService] =
-    useState("Fiber-Optic");
+const EducationProduct = () => {
+  const [selectedEducationProduct, setSelectedEducationProduct] = useState("");
 
-  const handleInternetServiceChange = (e) => {
-    setSelectedInternetService(e.target.value);
+  const handleEducationProductChange = (e) => {
+    setSelectedEducationProduct(e.target.value);
   };
 
   return (
     <div className="flex flex-row p-3">
-      <div className="bg-gray-400 p-3 rounded-l-md">
-        <p className="text-white">InternetService :</p>
-      </div>
+      <p className="bg-gray-400 p-3 rounded-l-md text-white">
+        Education Product :
+      </p>
       <select
-        value={selectedInternetService}
-        onChange={handleInternetServiceChange}
-        className="w-[20vh] rounded-r-md px-2"
+        value={selectedEducationProduct}
+        onChange={handleEducationProductChange}
+        className="w-[20.3vh] rounded-r-md px-2"
       >
-        <option value="Fiber-Optic">Fiber Optic</option>
-        <option value="Female">Female</option>
+        <option value="" disabled hidden>
+          Use Education Product?
+        </option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="No Internet Service">No Internet Service</option>
       </select>
     </div>
   );
 };
 
-export default InternetService;
+export default EducationProduct;

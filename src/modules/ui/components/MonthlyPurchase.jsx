@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-const TenureMonths = () => {
-  const [tenureMonths, setTenureMonths] = useState("");
+const MonthlyPurchase = () => {
+  const [MonthlyPurchase, setMonthlyPurchase] = useState("");
 
-  const handleTenureMonthsChange = (e) => {
+  const handleMonthlyPurchaseChange = (e) => {
     const inputValue = e.target.value.replace(/\D/g, "");
-    setTenureMonths(inputValue);
+    setMonthlyPurchase(inputValue);
   };
 
   return (
@@ -15,13 +15,13 @@ const TenureMonths = () => {
       </div>
       <input
         type="text"
-        value={tenureMonths}
-        onChange={handleTenureMonthsChange}
+        value={MonthlyPurchase}
+        onChange={handleMonthlyPurchaseChange}
         className="w-[26.8vh] rounded-r-md px-2"
-        placeholder="Enter months"
+        placeholder="Enter IDR"
       />
     </div>
   );
 };
 
-export default TenureMonths;
+export default MonthlyPurchase;
