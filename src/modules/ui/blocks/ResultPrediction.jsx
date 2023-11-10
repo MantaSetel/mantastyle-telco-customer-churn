@@ -5,7 +5,6 @@ const ResultPrediction = () => {
   return (
     <div className="bg-[#0969b5] h-[15vh] w-[185vh] rounded-xl mt-3">
       <div className="flex flex-row justify-between">
-        <PrimaryButton />
         <Churn />
       </div>
     </div>
