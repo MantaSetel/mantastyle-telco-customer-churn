@@ -1,15 +1,16 @@
 import Churn from "../components/Churn";
-import PrimaryButton from "../components/PrimaryButton";
 
 const ResultPrediction = () => {
-  return (
-    <div className="bg-[#0969b5] h-[15vh] w-[185vh] rounded-xl mt-3">
-      <div className="flex flex-row justify-between">
-        <PrimaryButton />
-        <Churn />
-      </div>
-    </div>
-  );
+    return (
+        <div className="bg-[#0969b5] mt-8 py-12">
+            <div className="flex text-white flex-col justify-center items-center space-y-4">
+                <p className="text-xl leading-0">
+                    APAKAH BERPOTENSI CHURN?{" "}
+                </p>
+                <span className="text-8xl">YA</span>
+            </div>
+        </div>
+    );
 };
 
 export default ResultPrediction;

@@ -8,7 +8,7 @@ const CallCenter = () => {
   };
 
   return (
-    <div className="flex flex-row p-3">
+    <div className="flex flex-row">
       <p className="bg-gray-400 p-3 rounded-l-md text-white">Call Center :</p>
       <select
         value={selectedCallCenter}
