@@ -1,11 +1,13 @@
 "use client";
 import { Button } from "flowbite-react";
 
-const PrimaryButton = () => {
+const PrimaryButton = ({ onClick, loading }) => {
   return (
     <Button
-      gradientDuoTone="purpleToBlue"
-      className="w-full font-bold text-[20px] h-full"
+      isProcessing={loading}
+      onClick={onClick}
+      gradientDuoTone="pinkToOrange"
+      className="mx-auto px-12 py-2 font-bold text-[20px] h-full"
     >
       Predict
     </Button>
