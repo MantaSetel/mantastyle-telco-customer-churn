@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Prediction from "../blocks/Prediction";
 import ResultPrediction from "../blocks/ResultPrediction";
+import Dashboard from "./Dashboard";
 
 const Tab = () => {
   const [activeTab, setActiveTab] = useState("Prediction");
@@ -43,7 +44,7 @@ const Tab = () => {
           </div>
         )}
         {activeTab === "Data Analysis" && (
-          <div>Content for Data Analysis Tab</div>
+          <Dashboard />
         )}
       </div>
     </div>
