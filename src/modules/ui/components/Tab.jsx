@@ -4,6 +4,8 @@ import ResultPrediction from "../blocks/ResultPrediction";
 
 const Tab = () => {
   const [activeTab, setActiveTab] = useState("Prediction");
+  const [churn, setChurn] = useState("")
+  const [loading, setLoading] = useState(false)
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
@@ -36,8 +38,8 @@ const Tab = () => {
       <div className="mt-4">
         {activeTab === "Prediction" && (
           <div>
-            <Prediction />
-            <ResultPrediction />
+            <Prediction loading={loading} setLoading={setLoading} churn={churn} setChurn={setChurn} />
+            { churn !== "" && <ResultPrediction churn={churn} setChurn={setChurn} /> }
           </div>
         )}
         {activeTab === "Data Analysis" && (
